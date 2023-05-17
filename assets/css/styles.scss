@@ -1,0 +1,16 @@
+@import "utility/container";
+
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/hero";
+@import "blocks/brands";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
