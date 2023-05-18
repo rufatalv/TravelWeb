@@ -22,23 +22,23 @@
     <div class="menu__inner">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Explore</a></li>
+        <li><a href="#explore">Explore</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#"> About us</a></li>
       </ul>
     </div>
   </div>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <a href="">
           <img src="assets/img/logo.png" alt="">
         </a>
         <ul class="header__links">
-          <li class="active"><a href="#">Home</a></li>
-          <li class=""><a href="#">Explore</a></li>
-          <li class=""><a href="#">About Us</a></li>
-          <li class=""><a href="#">Contact</a></li>
+          <li class="header__link active"><a href="#">Home</a></li>
+          <li class="header__link"><a href="#explore">Explore</a></li>
+          <li class="header__link"><a href="#">About Us</a></li>
+          <li class="header__link"><a href="#">Contact</a></li>
         </ul>
         <div class="header__right">
           <div class="joinus"><a href="#">Join Us</a></div>
@@ -48,8 +48,8 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main class="">
+    <section class="hero scrollspy">
       <div class="hero__inner">
         <div class="hero__left">
           <div class="hero__left-text">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="brands">
+    <section class="brands " id="brands">
       <div class="brands__inner container">
         <img src="assets/img/Southwest.png" alt="">
         <img src="assets/img/Qatar.png" alt="">
@@ -92,7 +92,7 @@
         <img src="assets/img/United.png" alt="">
       </div>
     </section>
-    <section class="explore" id="explore">
+    <section class="explore scrollspy" id="explore">
       <div class="container">
         <div class="explore__info">
           <h1 class="explore__title"><span>Explore</span> The World</h1>
@@ -112,26 +112,81 @@
           </div>
 
           <div class="popular__grid">
-            <div class="grid-left-top-one grid-item">
+            <div class="grid-left-top-one grid-item waterfall">
               <div class="grid-image">
-                <img src="/assets/img/waterfall-card.png" alt="">
+                <img class="grid-image" src="/assets/img/waterfall-card.png">
+                <div class="grid-waterfall">
+                  <h1>
+                    Agbokim waterfalls
+                  </h1>
+                  <div class="grid-inner__text">
+                    <img src="/assets/img/location-tick.svg">
+                    <p>Nigeria, cross river state</p>
+                  </div>
+                  <div class="inner__text-heart">
+                    <img src="/assets/img/heart.svg" alt="">
+                    <p>4321</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="grid-left-top-two grid-item">
+            <div class="grid-left-top-two grid-item taj">
               <div class="grid-image">
-                <img src="/assets/img/taj-card.png" alt="">
+                <img class="grid-image" src="/assets/img/taj-card.png">
+                <div class="grid-taj">
+                  <h1>
+                    Taj Mahal
+                  </h1>
+                  <div class="grid-inner__text">
+                    <img src="/assets/img/location-tick.svg">
+                    <p>Agra</p>
+                  </div>
+                  <div class="inner__text-heart">
+                    <img src="/assets/img/heart.svg" alt="">
+                    <p>4321</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="grid-right grid-item">
+            <div class="grid-right grid-item paris">
               <div class="grid-image">
-                <img src="/assets/img/paris-card.png" alt="">
+                <img class="grid-image" src="/assets/img/paris-card.png">
+                <div class="grid-paris">
+                  <h1>
+                    Eiffel Tower
+                  </h1>
+                  <div class="grid-inner__text">
+                    <img src="/assets/img/location-tick.svg">
+                    <p>Paris</p>
+                  </div>
+                  <div class="inner__text-heart">
+                    <img src="/assets/img/heart.svg" alt="">
+                    <p>231152</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="grid-left-bottom grid-item">
-              <div class="grid-image china">
-                <img src="/assets/img/china-card.png">
+            <div class="grid-left-bottom grid-item china">
+              <img class="grid-image china" src="/assets/img/china-card.png">
+              <div class="grid-china">
+                <h1>
+                  Great Wall of China
+                </h1>
+                <div class="grid-inner__text">
+                  <img src="/assets/img/location-tick.svg">
+                  <p>Beijing</p>
+                </div>
+                <div class="inner__text-heart">
+                  <img src="/assets/img/heart.svg" alt="">
+                  <p>131253</p>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="text">
+            <a href="#">
+              See more
+            </a>
           </div>
         </div>
 
@@ -144,8 +199,10 @@
   <footer>
 
   </footer>
-
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/simple-scrollspy.min.js"></script>
+  <script>
+  </script>
 </body>
 
 </html>
