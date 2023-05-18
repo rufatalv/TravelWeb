@@ -372,11 +372,38 @@ input:focus-visible {
 
 .popular__grid {
   display: grid;
+  margin-top: 4.5rem;
+  padding-bottom: 8rem;
+  grid-gap: 20px;
   width: 100%;
   height: 100%;
   grid-template-areas: "grid-left-top-one grid-left-top-two grid-right" "grid-left-bottom grid-left-bottom grid-right";
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+.popular__grid .grid-item {
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 245, 245, 0.09);
+  -webkit-backdrop-filter: blur(39px);
+          backdrop-filter: blur(39px);
+  border-radius: 0.625rem;
+  padding: 16px;
+}
+.popular__grid .grid-item .grid-image {
+  width: 100%;
+}
+.popular__grid .grid-item .grid-image img {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.46);
+}
+.popular__grid .grid-item .grid-image.china {
+  width: 100%;
+  height: 50%;
 }
 
 .grid-left-top-one {

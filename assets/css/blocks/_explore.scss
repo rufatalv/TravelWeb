@@ -110,12 +110,42 @@ input:focus-visible {
 
 .popular__grid {
     display: grid;
+    margin-top: 4.5rem;
+    padding-bottom: 8rem;
+    grid-gap: 20px;
     width: 100%;
     height: 100%;
     grid-template-areas: "grid-left-top-one grid-left-top-two grid-right"
         "grid-left-bottom grid-left-bottom grid-right";
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    .grid-item {
+        width: 100%;
+        height: 100%;
+        background: rgba(254, 245, 245, 0.09);
+        backdrop-filter: blur(39px);
+        border-radius: .625rem;
+        padding: 16px;
+
+        .grid-image {
+            width: 100%;
+
+            img {
+                border-radius: 10px;
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                filter: brightness(0.46);
+            }
+
+            &.china {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+    }
 }
 
 .grid-left-top-one {
