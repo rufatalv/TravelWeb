@@ -1,0 +1,135 @@
+.explore {
+    background: url('/assets/img/bgexplore.png');
+    background-size: cover;
+
+    &__info {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 1.8125rem;
+        max-width: 38.75rem;
+        padding-top: 4.9375rem;
+        text-align: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 700;
+
+        span {
+            font-size: 50px;
+
+            color: #03CEC9;
+        }
+    }
+
+    &__desc {
+        font-size: 17px;
+        color: #fff;
+    }
+
+    &__searches {
+        &-text {
+            font-family: 'Poppins';
+            font-style: normal;
+            position: relative;
+            font-weight: 400;
+            font-size: 24px;
+            color: #FFFFFF;
+
+            &::before {
+                content: " ";
+                display: block;
+                height: 1px;
+                width: 700px;
+                position: absolute;
+                top: 125%;
+                right: 91.5%;
+                background: #fff;
+            }
+        }
+    }
+}
+
+.search {
+    &-container {
+        position: relative;
+    }
+
+    &-input {
+        padding-top: 15px;
+        padding-right: 16px;
+        padding-bottom: 15px;
+        padding-left: 67px;
+        border: 1px solid #121212;
+        background-color: #F1F1F1;
+        border-radius: 13px;
+        width: 500px;
+        height: 52px;
+
+        &::placeholder {
+            font-size: 14px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            color: #8A8A8A;
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        top: 16px;
+        left: 80px;
+        width: 18px;
+        height: 18px;
+    }
+
+    &-button {
+        position: absolute;
+        top: 3px;
+        right: 63px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        border-radius: 11px;
+        align-items: center;
+        background-color: #1E1325;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+input:focus-visible {
+    outline-offset: 0px;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.popular__grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "grid-left-top-one grid-left-top-two grid-right"
+        "grid-left-bottom grid-left-bottom grid-right";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-left-top-one {
+    grid-area: grid-left-top-one;
+}
+
+.grid-left-top-two {
+    grid-area: grid-left-top-two;
+}
+
+.grid-right {
+    grid-area: grid-right;
+}
+
+.grid-left-bottom {
+    grid-area: grid-left-bottom;
+}
