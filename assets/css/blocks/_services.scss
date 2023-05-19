@@ -1,68 +1,72 @@
 .services {
-    background-color: #D9D9D9;
+  background-color: #d9d9d9;
 
-    &__logo {}
+  &__logo {
+  }
 
-    &__top {
-        padding-top: 45px;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 68px;
-    }
+  &__top {
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 68px;
+  }
 
-    &__text {
-        text-align: center;
-        font-size: 3.125rem;
-        color: #009490;
-    }
+  &__text {
+    text-align: center;
+    font-size: 3.125rem;
+    color: #009490;
+  }
 
-    &__cards {
-        text-align: center;
+  &__cards {
+    text-align: center;
 
-        .services__card {
-            position: relative;
-            z-index: 12;
+    .services__card {
+      position: relative;
+      z-index: 12;
 
-            &-img {
-                img {
-                    width: 259px;
-                    height: 270px;
-                    max-width: 100%;
-                    max-height: 100%;
-                    filter: brightness(0.49);
-                    border-radius: 12px;
-                    object-fit: cover;
-                }
-            }
-
-            &-text {
-                background: #171721;
-                z-index: 15;
-                color: #fff;
-                position: absolute;
-                border-radius: 4px;
-                top: -15%;
-                max-width: 210px;
-                padding: 12px;
-
-                h1 {
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-
-                p {
-                    font-size: 13px;
-                    font-weight: 400;
-                }
-            }
+      &-img {
+        img {
+          width: 259px;
+          height: 270px;
+          max-width: 100%;
+          max-height: 100%;
+          filter: brightness(0.49);
+          border-radius: 12px;
+          object-fit: cover;
         }
+      }
+
+      &-text {
+        background: #171721;
+        z-index: 15;
+        color: #fff;
+        position: absolute;
+        border-radius: 4px;
+        top: -15%;
+        @media screen and (max-width: 769px) {
+          left: 15%;
+        }
+        max-width: 210px;
+        padding: 12px;
+
+        h1 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
     }
+  }
 }
 
-.services__wrapper{
-    .swiper{
-        overflow: visible;
-    }
+.services__wrapper {
+  .swiper {
+    // overflow: visible;
+  }
 }

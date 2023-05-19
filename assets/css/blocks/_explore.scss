@@ -423,13 +423,16 @@ input:focus-visible {
         background: rgba(254, 245, 245, 0.09);
         backdrop-filter: blur(4px);
         border-radius: 0.625rem;
-
         &:nth-child(1) {
           background: none;
           backdrop-filter: none;
+          flex-basis: 70%;
           padding: 0;
         }
-        padding: 16px;
+        &:nth-child(2) {
+          flex-basis: 20%;
+        }
+        padding: 17px 16px 13px 13px;
         display: flex;
         gap: 20px;
 
@@ -443,7 +446,7 @@ input:focus-visible {
               display: flex;
               flex-direction: column;
               gap: 22px;
-              flex: 1 0 0;
+              flex: 1 0 30%;
               justify-content: center;
             }
 
@@ -469,7 +472,7 @@ input:focus-visible {
             }
 
             &-thumbnail {
-              width: 600px;
+              width: 590px;
               filter: brightness(0.6);
               height: 275px;
               object-fit: cover;
@@ -500,10 +503,148 @@ input:focus-visible {
 
           &:nth-child(1) {
             flex-basis: 70%;
+            .card {
+              color: #fff;
+              width: 100%;
+              &-text {
+                display: flex;
+                flex-direction: row;
+                margin-top: 26px;
+                margin-bottom: 33px;
+                &__left {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 22px;
+                }
+                gap: 22px;
+                flex: 1 0 0;
+                justify-content: center;
+              }
+
+              &-likes {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                margin-left: auto;
+                margin-right: 6px;
+                p {
+                  font-family: "Poppins";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 19px;
+                  line-height: 28px;
+                  letter-spacing: 0.01em;
+
+                  color: #f3f3f3;
+                }
+
+                img {
+                  width: 24px;
+                  box-sizing: content-box;
+                  padding: 8px;
+                  height: 24px;
+                  background: #494949;
+                  border-radius: 50%;
+                }
+              }
+
+              &-thumbnail {
+                width: 100%;
+                filter: brightness(0.6);
+                height: 220px;
+                object-fit: cover;
+                border-radius: 8px;
+              }
+
+              h1 {
+                font-size: 23px;
+                font-weight: 600;
+              }
+
+              .card-location {
+                display: flex;
+                gap: 6px;
+
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
           }
 
           &:nth-child(2) {
             flex-basis: 30%;
+            .card {
+              color: #fff;
+              width: 100%;
+              &-text {
+                display: flex;
+                flex-direction: row;
+                margin-top: 12px;
+                margin-bottom: 24px;
+                &__left {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                }
+                gap: 22px;
+                flex: 1 0 0;
+                justify-content: center;
+              }
+
+              &-likes {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                margin-left: auto;
+                margin-right: 6px;
+                p {
+                  font-family: "Poppins";
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 19px;
+                  line-height: 28px;
+                  letter-spacing: 0.01em;
+
+                  color: #f3f3f3;
+                }
+
+                img {
+                  width: 24px;
+                  box-sizing: content-box;
+                  padding: 8px;
+                  height: 24px;
+                  background: #494949;
+                  border-radius: 50%;
+                }
+              }
+
+              &-thumbnail {
+                width: 100%;
+                height: auto;
+                filter: brightness(0.6);
+                object-fit: cover;
+                border-radius: 8px;
+              }
+
+              h1 {
+                font-size: 23px;
+                font-weight: 600;
+              }
+
+              .card-location {
+                display: flex;
+                gap: 6px;
+
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
           }
         }
       }
