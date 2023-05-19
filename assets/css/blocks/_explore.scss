@@ -401,9 +401,6 @@ input:focus-visible {
     background: rgba(254, 245, 245, 0.09);
     backdrop-filter: blur(4px);
     border-radius: 0.625rem;
-    padding: 14px;
-
-    padding: 16px;
     border-radius: 10px;
 
     &:nth-child(1) {
@@ -414,6 +411,7 @@ input:focus-visible {
 
     &:nth-child(2) {
       flex-basis: 20%;
+      padding: 16px;
     }
 
     &.col-left {

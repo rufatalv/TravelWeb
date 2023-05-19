@@ -622,8 +622,6 @@ input:focus-visible {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   border-radius: 0.625rem;
-  padding: 14px;
-  padding: 16px;
   border-radius: 10px;
 }
 .popular__items .items__col:nth-child(1) {
@@ -634,6 +632,7 @@ input:focus-visible {
 }
 .popular__items .items__col:nth-child(2) {
   flex-basis: 20%;
+  padding: 16px;
 }
 .popular__items .items__col.col-left {
   display: flex;
