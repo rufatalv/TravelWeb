@@ -134,8 +134,8 @@ input:focus-visible {
     height: 100%;
     grid-template-areas: "grid-left-top-one grid-left-top-two grid-right"
         "grid-left-bottom grid-left-bottom grid-right";
-    grid-template-columns: 2fr 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 2fr;
 
     .grid-item {
         width: 100%;
@@ -145,6 +145,13 @@ input:focus-visible {
         padding: 14px;
 
         &.taj {
+            .grid-image {
+                .grid-image {
+                    max-width: 245px;
+                    height: auto;
+                }
+            }
+
             .grid-taj {
                 display: flex;
                 flex-direction: column;

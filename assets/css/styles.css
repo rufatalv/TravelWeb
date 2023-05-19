@@ -396,7 +396,8 @@ input:focus-visible {
   width: 100%;
   height: 100%;
   grid-template-areas: "grid-left-top-one grid-left-top-two grid-right" "grid-left-bottom grid-left-bottom grid-right";
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 2fr;
 }
 .popular__grid .grid-item {
   width: 100%;
@@ -405,6 +406,10 @@ input:focus-visible {
           backdrop-filter: blur(4px);
   border-radius: 0.625rem;
   padding: 14px;
+}
+.popular__grid .grid-item.taj .grid-image .grid-image {
+  max-width: 245px;
+  height: auto;
 }
 .popular__grid .grid-item.taj .grid-taj {
   display: flex;
