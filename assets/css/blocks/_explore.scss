@@ -436,7 +436,63 @@ input:focus-visible {
         gap: 20px;
 
         &.bottom {
-          display: flex;
+          .card {
+            display: flex;
+            color: #fff;
+            gap: 26px;
+            width: 100%;
+            &-text {
+              display: flex;
+              flex-direction: column;
+              gap: 22px;
+              flex: 1 0 0;
+              justify-content: center;
+            }
+
+            &-likes {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+              margin-left: auto;
+
+              p {
+                color: #fff;
+                font-size: 12px;
+              }
+
+              img {
+                width: 24px;
+                box-sizing: content-box;
+                padding: 8px;
+                height: 24px;
+                background: #494949;
+                border-radius: 50%;
+              }
+            }
+
+            &-thumbnail {
+              width: 600px;
+              filter: brightness(0.6);
+              height: 275px;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+
+            h1 {
+              font-size: 23px;
+              font-weight: 600;
+            }
+
+            .card-location {
+              display: flex;
+              gap: 6px;
+
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
         }
         .items__col-inner {
           background: rgba(254, 245, 245, 0.09);
