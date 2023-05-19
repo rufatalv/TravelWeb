@@ -24,3 +24,4 @@ menuCloseBtn.addEventListener("click", () => {
 menuOpenBtn.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
+
