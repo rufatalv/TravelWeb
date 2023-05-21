@@ -1,9 +1,10 @@
 @import "utility/container";
+@import "utility/vars";
 
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/hero";
-@import "blocks/brands";
+@import "blocks/partners";
 @import "blocks/explore";
 @import "blocks/services";
 
@@ -11,9 +12,22 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body._lock {
+  overflow: hidden;
 }

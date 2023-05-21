@@ -24,280 +24,310 @@
   </head>
 
   <body>
-    <div class="menu" id="menu">
-      <img src="assets/img/cross.svg" id="menuCloseBtn" alt="" />
-      <div class="menu__inner">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#"> About us</a></li>
-        </ul>
-      </div>
-    </div>
-    <header class="header" id="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="">
-            <img src="assets/img/logo.png" alt="" />
-          </a>
-          <ul class="header__links">
-            <li class="header__link active"><a href="#">Home</a></li>
-            <li class="header__link"><a href="#explore">Explore</a></li>
-            <li class="header__link"><a href="#">About Us</a></li>
-            <li class="header__link"><a href="#">Contact</a></li>
-          </ul>
-          <div class="header__right">
-            <div class="joinus"><a href="#">Join Us</a></div>
-            <img src="assets/img/burger.svg" alt="" id="menuOpenBtn" />
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <img src="/assets/img/logo.png" alt="Logo" />
+        </a>
+        <div class="header__menu menu">
+          <div class="menu__icon"><span></span></div>
+          <div class="menu__content">
+            <nav class="menu__navigation navigation">
+              <ul class="navigation__links">
+                <li class="navigation__link active"><a href="#">Home</a></li>
+                <li class="navigation__link"><a href="#explore">Explore</a></li>
+                <li class="navigation__link"><a href="#">About Us</a></li>
+                <li class="navigation__link"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
+        <a class="header__join header__button"> Join Us </a>
       </div>
     </header>
-
-    <main class="">
-      <section class="hero scrollspy">
-        <div class="hero__inner">
-          <div class="hero__left">
-            <div class="hero__left-text">
-              <h1>
-                <span class="discover">Discover</span> New
-                <span>Experiences</span>
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
-                sem suspendisse tristique habitant consectetur cursus at. Leo in
-                eget convallis nunc rhoncus nulla m
-              </p>
-              <a href="#">Explore</a>
-            </div>
-          </div>
-          <div class="hero__right">
-            <div class="hero__right-up">
-              <img src="assets/img/paris.png" alt="" />
-              <img src="assets/img/waterfall.png" alt="" />
-              <img src="assets/img/cliff.png" alt="" />
-            </div>
-            <div class="hero__right-down">
-              <div class="down-text">
-                <p>Tourist</p>
-                <h2>25.5 K</h2>
-              </div>
-              <div class="down-text">
-                <p>Tourist Guide</p>
-                <h2>2K+</h2>
-              </div>
-              <div class="down-text">
-                <p>Tourist Center</p>
-                <h2>1.1+ K</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="brands" id="brands">
-        <div class="brands__inner container">
-          <img src="assets/img/Southwest.png" alt="" />
-          <img src="assets/img/Qatar.png" alt="" />
-          <img src="assets/img/boeing.png" alt="" />
-          <img src="assets/img/United.png" alt="" />
-        </div>
-      </section>
-      <section class="explore scrollspy" id="explore">
-        <div class="container">
-          <div class="explore__info">
-            <h1 class="explore__title"><span>Explore</span> The World</h1>
-            <p class="explore__desc">
+    <main>
+      <!-- <section class="hero">
+        <div class="hero__left">
+          <div class="text">
+            <h1>
+              <span class="discover">Discover </span>
+              <span class="new"> New </span>
+              <span class="experiences">Experiences</span>
+            </h1>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
               sem suspendisse tristique habitant consectetur cursus at. Leo in
               eget convallis nunc rhoncus nulla m
             </p>
-            <div class="search-container">
-              <img class="search-icon" src="assets/img/search.svg" srcset="" />
-              <input
-                type="text"
-                class="search-input"
-                placeholder="Search for Tourist centers, location"
-              />
-              <button type="submit" class="search-button">
-                <img src="assets/img/arrow-right.svg" alt="" srcset="" />
-              </button>
-            </div>
-          </div>
-          <div class="explore__searches">
-            <div class="explore__searches-text">Popular Searches</div>
-
-            <div class="popular__items">
-              <div class="items__col col-left">
-                <div class="items__row">
-                  <div class="items__col-inner">
-                    <div class="card">
-                      <img
-                        class="card-thumbnail"
-                        src="./assets/img/waterfall-card.png "
-                        alt=""
-                      />
-                      <div class="card-text">
-                        <div class="card-text__left">
-                          <h1>Agbokim waterfalls</h1>
-                          <div class="card-location">
-                            <img src="./assets/img/location-tick.svg" />
-                            <p>Nigeria, cross river state</p>
-                          </div>
-                        </div>
-                        <div class="card-likes">
-                          <img src="./assets/img/heart.svg" alt="" />
-                          <p>4321</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="items__col-inner">
-                    <div class="card">
-                      <img
-                        class="card-thumbnail"
-                        src="./assets/img/taj-card.png "
-                        alt=""
-                      />
-                      <div class="card-text">
-                        <div class="card-text__left">
-                          <h1>Taj Mahal</h1>
-                          <div class="card-location">
-                            <img src="./assets/img/location-tick.svg" />
-                            <p>NAg</p>
-                          </div>
-                        </div>
-                        <div class="card-likes">
-                          <img src="./assets/img/heart.svg" alt="" />
-                          <p>4321</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="items__row bottom">
-                  <div class="card">
-                    <img
-                      class="card-thumbnail"
-                      src="./assets/img/china-card.png"
-                      alt=""
-                    />
-                    <div class="card-text">
-                      <h1>Great Wall of China</h1>
-                      <div class="card-location">
-                        <img src="./assets/img/location-tick.svg" />
-                        <p>Beijing</p>
-                      </div>
-                      <div class="card-likes">
-                        <img src="./assets/img/heart.svg" alt="" />
-                        <p>131253</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="items__col col-right">
-                <div class="card">
-                  <img
-                    class="card-thumbnail"
-                    src="./assets/img/paris-card.png "
-                    alt=""
-                  />
-                  <div class="card-text">
-                    <h1>Eiffel Tower</h1>
-                    <div class="card-location">
-                      <img src="./assets/img/location-tick.svg" />
-                      <p>Paris</p>
-                    </div>
-                    <div class="card-likes">
-                      <img src="./assets/img/heart.svg" alt="" />
-                      <p>231152</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text">
-              <a href="#"> See more </a>
+            <div class="explore-btn">
+              <a href="#">Explore</a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="services">
-        <div class="container services__wrapper">
-          <div class="services__top">
-            <img class="services__logo" src="./assets/img/serviceslogo.png" />
-            <h1 class="services__text">Services</h1>
-          </div>
-          <div class="wrapper swiper services__slider">
-            <div class="services__cards swiper-wrapper">
-              <div class="services__card swiper-slide">
-                <div class="services__card-img">
-                  <img src="./assets/img/card-one.png" alt="" class="" />
-                </div>
-                <div class="services__card-text">
-                  <h1>Best Hotels</h1>
-                  <p>
-                    Lorem ipsum dolor sit acus nulla mLorem ipsum dolor sit acus
-                    nulla m
-                  </p>
-                </div>
-              </div>
-              <div class="services__card swiper-slide">
-                <div class="services__card-img">
-                  <img src="./assets/img/card-two.png" alt="" class="" />
-                </div>
-                <div class="services__card-text">
-                  <h1>Best Hotels</h1>
-                  <p>
-                    Lorem ipsum dolor sit acus nulla mLorem ipsum dolor sit acus
-                    nulla m
-                  </p>
-                </div>
-              </div>
-              <div class="services__card swiper-slide">
-                <div class="services__card-img">
-                  <img src="./assets/img/card-three.png" alt="" class="" />
-                </div>
-                <div class="services__card-text">
-                  <h1>Best Hotels</h1>
-                  <p>
-                    Lorem ipsum dolor sit acus nulla mLorem ipsum dolor sit acus
-                    nulla m
-                  </p>
-                </div>
-              </div>
+        <div class="hero__right">
+          <div class="up">
+            <div>
+              <img src="assets/img/paris.png" alt="" />
             </div>
+            <div>
+              <img src="assets/img/waterfall.png" alt="" />
+            </div>
+            <div>
+              <img src="assets/img/cliff.png" alt="" />
+            </div>
+          </div>
+          <div class="down">
+            <div class="down-text">
+              <p>Tourist</p>
+              <h2>25.5 K</h2>
+            </div>
+            <div class="down-text">
+              <p>Tourist Guide</p>
+              <h2>2K+</h2>
+            </div>
+            <div class="down-text">
+              <p>Tourist Center</p>
+              <h2>1.1+ K</h2>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="partners">
+        <div class="partners__container">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="/assets/img/Southwest.png" alt="Logo Southwest" />
+            </li>
+            <li class="partners__item">
+              <img src="/assets/img/Qatar.png" alt="Logo Qatar Airways" />
+            </li>
+            <li class="partners__item">
+              <img src="/assets/img/boeing.png" alt="Logo Boeing" />
+            </li>
+            <li class="partners__item">
+              <img src="/assets/img/United.png" alt="Logo United" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="explore">
+        <div class="explore__container">
+          <h2 class="explore__title title"><span>Explore</span> The World</h2>
+          <p class="explore__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sem
+            suspendisse tristique habitant consectetur cursus at. Leo in eget
+            convallis nunc rhoncus nulla m
+          </p>
+          <form class="explore__search-form search-form">
+            <div class="search">
+              <img src="/assets/img/search.svg" alt="" />
+            </div>
+            <input
+              type="search"
+              placeholder="Search for Tourist centers, location"
+              class="search-form__input"
+            />
+            <button type="submit" class="search-form__submit-btn">
+              <img src="/assets/img/arrow-right.svg" />
+            </button>
+          </form>
+          <h3 class="popular__title">Popular Searches</h3>
+          <ul class="explore__list list-explore">
+            <li class="list-explore__item">
+              <a href="#" class="list-explore__link">
+                <picture class="list-explore__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/agbokim.jpg    1x,
+                      ./assets/img/desktop/agbokim@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/agbokim.jpg    1x,
+                      ./assets/img/tablet/agbokim@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/agbokim.jpg    1x,
+                      ./assets/img/mobile/agbokim@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="list-explore__img"
+                    src="./assets/img/mobile/agbokim.jpg"
+                    alt="Agbokim Waterfall"
+                  />
+                </picture>
+
+                <div class="list-explore__description">
+                  <div class="list-explore__name">
+                    <h3 class="list-explore__title">Agbokim waterfalls</h3>
+                    <p class="list-explore__location">
+                      Nigeria, cross river state
+                    </p>
+                  </div>
+                  <div class="list-explore__action">
+                    <div class="list-explore__like">
+                      <img src="/assets/img/heart.svg" alt="" />
+                    </div>
+                    <span class="list-explore__like-counter">4321</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="list-explore__item">
+              <a href="#" class="list-explore__link">
+                <picture class="list-explore__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/taj-mahal.jpg    1x,
+                      ./assets/img/desktop/taj-mahal@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/taj-mahal.jpg    1x,
+                      ./assets/img/tablet/taj-mahal@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/taj-mahal.jpg    1x,
+                      ./assets/img/mobile/taj-mahal@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="list-explore__img"
+                    src="./assets/img/mobile/taj-mahal.jpg"
+                    alt="Taj Mahal"
+                  />
+                </picture>
+
+                <div class="list-explore__description">
+                  <div class="list-explore__name">
+                    <h3 class="list-explore__title">Taj Mahal</h3>
+                    <p class="list-explore__location">Agra</p>
+                  </div>
+                  <div class="list-explore__action">
+                    <div class="list-explore__like">
+                      <img src="/assets/img/heart.svg" alt="" />
+                    </div>
+                    <span class="list-explore__like-counter">4321</span>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="list-explore__item list-explore__item--big">
+              <a href="#" class="list-explore__link">
+                <picture class="list-explore__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/eiffel-tower.jpg    1x,
+                      ./assets/img/desktop/eiffel-tower@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/eiffel-tower.jpg    1x,
+                      ./assets/img/tablet/eiffel-tower@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/eiffel-tower.jpg    1x,
+                      ./assets/img/mobile/eiffel-tower@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="list-explore__img"
+                    src="./assets/img/mobile/eiffel-tower.jpg"
+                    alt="Eiffel Tower"
+                  />
+                </picture>
+
+                <div class="list-explore__description">
+                  <div class="list-explore__name">
+                    <h3 class="list-explore__title">Eiffel Tower</h3>
+                    <p class="list-explore__location">Paris</p>
+                  </div>
+                  <div class="list-explore__action">
+                    <div class="list-explore__like">
+                      <img src="/assets/img/heart.svg" alt="" />
+                    </div>
+                    <span class="list-explore__like-counter">4321</span>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="list-explore__item list-explore__item--big1">
+              <a href="#" class="list-explore__link list-explore__link--flex">
+                <picture class="list-explore__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/great-wall.jpg    1x,
+                      ./assets/img/desktop/great-wall@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/great-wall.jpg    1x,
+                      ./assets/img/tablet/great-wall@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/great-wall.jpg    1x,
+                      ./assets/img/mobile/great-wall@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="list-explore__img"
+                    src="./assets/img/mobile/great-wall.jpg"
+                    alt="Great Wall China"
+                  />
+                </picture>
+
+                <div class="list-explore__description">
+                  <div class="list-explore__name">
+                    <h3 class="list-explore__title">Great Wall of China</h3>
+                    <p class="list-explore__location">Beijing</p>
+                  </div>
+                  <div
+                    class="list-explore__action list-explore__action--position"
+                  >
+                    <div class="list-explore__like">
+                      <img src="/assets/img/heart.svg" alt="" />
+                    </div>
+                    <span class="list-explore__like-counter">4321</span>
+                  </div>
+                </div></a
+              >
+            </li>
+          </ul>
+          <div class="explore__link-div">
+            <a href="#" class="explore__link link">See More</a>
+
           </div>
         </div>
       </section>
     </main>
-
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper2 = new Swiper(".services__slider", {
-        loop: true,
-        slidesPerView: 3,
-        grabCursor: true,
-        scrollContainer: false,
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          // when window width is >= 640px
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
