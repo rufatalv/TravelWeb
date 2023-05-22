@@ -327,7 +327,7 @@
         <div class="services__container">
           <div class="services__header">
             <img src="/assets/img/serviceslogo.png" alt="Logo" />
-            <!-- <h2 class="services__title title">Services</h2> -->
+            <h2 class="services__title title">Services</h2>
           </div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -387,9 +387,141 @@
           </div>
         </div>
       </section>
+      <section class="book">
+        <div class="book__left">'</div>
+        <div class="book__right">
+          <div class="inner">
+            <div class="book__title">
+              Book a <span>Flight</span> With Us Today
+            </div>
+            <form action="#" class="book__form">
+              <div class="checkboxes">
+                <div class="check">
+                  <label for="radio">One Way</label>
+                  <input
+                    class="checkbox"
+                    type="radio"
+                    name="One Way"
+                    id="radio"
+                  />
+                </div>
+                <div class="check">
+                  <label for="radio">One Way</label>
+                  <input
+                    class="checkbox"
+                    type="radio"
+                    name="One Way"
+                    id="radio"
+                  />
+                </div>
+              </div>
+              <div class="text-inputs">
+                <img
+                  src="/assets/img/location-tick.svg"
+                  alt=""
+                  class="text-input__icon"
+                />
+                <input
+                  class="text-input"
+                  placeholder="Leaving from..."
+                  type="text"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="text-inputs">
+                <img
+                  src="/assets/img/location-tick.svg"
+                  alt=""
+                  class="text-input__icon"
+                />
+                <input
+                  class="text-input"
+                  type="text"
+                  placeholder="Going to..."
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="date-forms">
+                <div class="date-inputs">
+                  <img
+                    src="/assets/img/calendar.svg"
+                    alt=""
+                    class="date-input__icon"
+                  />
+                  <input
+                    class="date-input"
+                    type="text"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    placeholder="Depart"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="date-inputs">
+                  <img
+                    src="/assets/img/calendar.svg"
+                    alt=""
+                    class="date-input__icon"
+                  />
+                  <input
+                    class="date-input"
+                    type="text"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    placeholder="Return"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="preferences">
+                <div class="preferences-inputs">
+                  <img
+                    src="/assets/img/profile-2user.svg"
+                    alt=""
+                    class="preferences-input__icon"
+                  />
+                  <select>
+                    <option value="1">1 passenger</option>
+                    <option value="2">2 passengers</option>
+                    <option value="3">3 passengers</option>
+                    <option value="4">4 passengers</option>
+                  </select>
+                </div>
+                <div class="preferences-inputs">
+                  <img
+                    src="/assets/img/star.svg"
+                    alt=""
+                    class="preferences-input__icon"
+                  />
+                  <select>
+                    <option data-display="Select">Nothing</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Another option</option>
+                    <option value="3" disabled>A disabled option</option>
+                    <option value="4">Potato</option>
+                  </select>
+                </div>
+              </div>
+              <a href="#" class="form-btn">Search Available Flights</a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="packages"></section>
     </main>
     <footer></footer>
-
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="path/to/jquery.nice-select.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").niceSelect();
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>

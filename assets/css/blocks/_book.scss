@@ -1,0 +1,256 @@
+.book {
+  display: flex;
+  height: 100%;
+  background-color: #272727;
+  &__left {
+    background-image: url("/assets/img/book.png");
+    background-size: cover;
+    width: 50%;
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 72px;
+    width: 100%;
+    @include desktop {
+      width: 50%;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.1);
+      background-image: url("/assets/img/book.png");
+      background-size: cover;
+      @include desktop {
+        display: none;
+      }
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      gap: 72px;
+      padding: 60px 35px;
+      @include tablet {
+        padding-top: 132px;
+        padding-bottom: 107px;
+        padding-inline: 142px;
+      }
+      @include desktop {
+        padding: 25px 50px;
+      }
+      form {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='25' ry='25' stroke='%23fff' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 25px;
+        width: 100%;
+        padding: 32px 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+
+        .text-inputs {
+          display: flex;
+          position: relative;
+        }
+        .text-input__icon {
+          position: absolute;
+          top: 25%;
+          left: 2%;
+        }
+        .text-input {
+          background-color: transparent;
+          width: 100%;
+          height: 45px;
+          border-radius: 4px;
+          color: $primaryColor;
+          padding-left: 10%;
+          font-family: $primaryFont;
+          font-size: 15px;
+          border: 3px #494747 solid;
+          &::placeholder {
+            font-size: 15px;
+            font-family: $primaryFont;
+            color: #c6c6c6;
+          }
+        }
+        .date-forms {
+          display: flex;
+          flex-direction: column;
+          @include tablet {
+            flex-direction: row;
+            gap: 50px;
+          }
+          gap: 30px;
+          width: 100%;
+        }
+        .date-inputs {
+          display: flex;
+          position: relative;
+          width: 100%;
+          .date-input {
+            background-color: transparent;
+            width: 100%;
+            height: 45px;
+            padding-left: 10%;
+            @include tablet {
+              padding-left: 22%;
+            }
+            border-radius: 4px;
+            color: $primaryColor;
+            font-family: $primaryFont;
+            font-size: 15px;
+            border: 3px #494747 solid;
+            &::placeholder {
+              font-size: 15px;
+              font-family: $primaryFont;
+              color: #c6c6c6;
+            }
+          }
+          .date-input__icon {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            @include tablet {
+              left: 4%;
+            }
+          }
+        }
+        .checkboxes {
+          display: flex;
+          @include tablet {
+            padding: 0 25px;
+          }
+          justify-content: space-between;
+          .check {
+            display: flex;
+          }
+        }
+        position: relative;
+        label {
+          font-size: 20px;
+          color: $primaryColor;
+          position: relative;
+        }
+        .form-btn {
+          text-align: center;
+          background-color: $accentColor;
+          padding: 17px 26px;
+          border-radius: 5px;
+          @include tablet {
+            padding: 17px 106px;
+          }
+        }
+      }
+    }
+  }
+}
+.book__title {
+  position: relative;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 500;
+  span {
+    font-size: 34px;
+    font-weight: 600;
+    color: $accentColor;
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0px;
+  margin-top: 10px;
+}
+.preferences {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    gap: 50px;
+  }
+  gap: 30px;
+  &-input__icon {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    @include tablet {
+      left: 4%;
+    }
+  }
+  &-inputs {
+    width: 100%;
+    position: relative;
+    select {
+      background-color: transparent;
+      width: 100%;
+      height: 45px;
+      padding-left: 5%;
+      @include tablet {
+        padding-left: 25%;
+      }
+      border-radius: 4px;
+      color: $primaryColor;
+      font-family: $primaryFont;
+      font-size: 15px;
+      border: 3px #494747 solid;
+      &::placeholder {
+        font-size: 15px;
+        font-family: $primaryFont;
+        color: #c6c6c6;
+      }
+    }
+  }
+  .nice-select {
+    width: 100%;
+    background: transparent;
+    color: #c6c6c6;
+    border: 3px #494747 solid;
+    padding: 0;
+    padding-left: 5%;
+    font-size: 15px;
+    @include tablet {
+      padding-left: 15%;
+    }
+    span {
+      padding-left: 5%;
+      @include tablet {
+        padding-left: 7%;
+      }
+    }
+    .list {
+      background: #272727;
+      width: 100%;
+      li:hover {
+        background: #494747;
+      }
+      color: #fff;
+    }
+  }
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background-color: #272727;
+}
