@@ -51,8 +51,8 @@ var init = false;
 /* Which media query
  **************************************************************/
 function swiperMode() {
-  let mobile = window.matchMedia("(min-width: 0px) and (max-width: 768px)");
-  let tablet = window.matchMedia("(min-width: 769px) and (max-width: 1024px)");
+  let mobile = window.matchMedia("(min-width: 0px) and (max-width: 766px)");
+  let tablet = window.matchMedia("(min-width: 768.01px) and (max-width: 1024px)");
   let desktop = window.matchMedia("(min-width: 1025px)");
 
   // Enable (for mobile)

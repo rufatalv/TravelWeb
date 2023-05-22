@@ -657,7 +657,7 @@
   height: 45px;
   border-radius: 4px;
   color: #ffffff;
-  padding-left: 10%;
+  padding-left: 12%;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   border: 3px #494747 solid;
@@ -693,7 +693,7 @@
   background-color: transparent;
   width: 100%;
   height: 45px;
-  padding-left: 10%;
+  padding-left: 12%;
   border-radius: 4px;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -803,7 +803,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: transparent;
   width: 100%;
   height: 45px;
-  padding-left: 5%;
+  padding-left: 7%;
   border-radius: 4px;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
@@ -840,7 +840,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .preferences .nice-select span {
-  padding-left: 5%;
+  padding-left: 7%;
 }
 @media screen and (min-width: 768px) {
   .preferences .nice-select span {
@@ -1185,17 +1185,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 992px) {
   .services {
     padding-top: 44px;
-    padding-bottom: 96px;
+    padding-bottom: 38px;
   }
 }
 .services__title {
   font-size: 36px;
   color: #00706d;
-}
-@media screen and (min-width: 768px) {
-  .services__title {
-    font-size: 50px;
-  }
 }
 .services__header {
   display: flex;
