@@ -19,7 +19,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0d1d11b1d6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Travel</title>
   </head>
 
@@ -388,8 +392,7 @@
         </div>
       </section>
       <section class="book">
-        <div class="book__left">'</div>
-        <div class="book__right">
+        <div class="book__content">
           <div class="inner">
             <div class="book__title">
               Book a <span>Flight</span> With Us Today
@@ -511,14 +514,699 @@
           </div>
         </div>
       </section>
-      <section class="packages"></section>
+      <section class="packages">
+        <div class="packages__container">
+          <div class="packages__header">
+            <h2 class="packages__title title"><span>Free</span> Packages</h2>
+            <p class="packages__text">
+              Join our communities to stand a chance to win our free offers to
+              one of these tourist centers.
+            </p>
+          </div>
+          <ul class="packages__list">
+            <li class="packages__item">
+              <div class="packages__item-image-container">
+                <img
+                  class="packages__item-image"
+                  src="/assets/img/colosseum.png"
+                />
+              </div>
+              <div class="packages__item-header">
+                <div class="package__header">
+                  <h3 class="package__header-name">Colosseum</h3>
+                  <p class="package__header-location">Rome</p>
+                </div>
+                <div class="package__action">
+                  <div class="package__action-like">
+                    <img src="/assets/img/heart.svg" alt="" srcset="" />
+                  </div>
+                  <p class="package__action-counter">4321</p>
+                </div>
+              </div>
+              <p class="package__description">
+                The Colosseum is an oval amphitheatre in the centre of the city
+                of Rome, Italy, just east of the Roman Forum. It is the largest
+                ancient amphitheatre ever built, and is still the largest
+                standing amphitheatre in the world today, despite its age.
+              </p>
+              <div class="package__join">
+                <a href="#">Join Community</a>
+              </div>
+            </li>
+            <li class="packages__item">
+              <div class="packages__item-image-container">
+                <img
+                  class="packages__item-image"
+                  src="/assets/img/canyon.png"
+                />
+              </div>
+              <div class="packages__item-header">
+                <div class="package__header">
+                  <h3 class="package__header-name">Grand Canyon</h3>
+                  <p class="package__header-location">Arizona</p>
+                </div>
+                <div class="package__action">
+                  <div class="package__action-like">
+                    <img src="/assets/img/heart.svg" alt="" srcset="" />
+                  </div>
+                  <p class="package__action-counter">4321</p>
+                </div>
+              </div>
+              <p class="package__description">
+                The Grand Canyon in Arizona is a natural formation distinguished
+                by layered bands of red rock, revealing millions of years of
+                geological history in cross-section. Vast in scale, the canyon
+                averages 10 miles across and a mile deep along its 277-mile
+                length
+              </p>
+              <div class="package__join">
+                <a href="#">Join Community</a>
+              </div>
+            </li>
+            <li class="packages__item">
+              <div class="packages__item-image-container">
+                <img
+                  class="packages__item-image"
+                  src="/assets/img/christ.png"
+                />
+              </div>
+              <div class="packages__item-header">
+                <div class="package__header">
+                  <h3 class="package__header-name">Christ the Redeemer</h3>
+                  <p class="package__header-location">Rio de Janeiro</p>
+                </div>
+                <div class="package__action">
+                  <div class="package__action-like">
+                    <img src="/assets/img/heart.svg" alt="" srcset="" />
+                  </div>
+                  <p class="package__action-counter">6676</p>
+                </div>
+              </div>
+              <p class="package__description">
+                Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio
+                de Janeiro, Brazil, created by French sculptor Paul Landowski
+                and built by Brazilian engineer Heitor da Silva Costa, in
+                collaboration with French engineer Albert Caquot.
+              </p>
+              <div class="package__join">
+                <a href="#">Join Community</a>
+              </div>
+            </li>
+            <li class="packages__item">
+              <div class="packages__item-image-container">
+                <img
+                  class="packages__item-image"
+                  src="/assets/img/colosseum.png"
+                />
+              </div>
+              <div class="packages__item-header">
+                <div class="package__header">
+                  <h3 class="package__header-name">Colosseum</h3>
+                  <p class="package__header-location">Rome</p>
+                </div>
+                <div class="package__action">
+                  <div class="package__action-like">
+                    <img src="/assets/img/heart.svg" alt="" srcset="" />
+                  </div>
+                  <p class="package__action-counter">4321</p>
+                </div>
+              </div>
+              <p class="package__description">
+                The Colosseum is an oval amphitheatre in the centre of the city
+                of Rome, Italy, just east of the Roman Forum. It is the largest
+                ancient amphitheatre ever built, and is still the largest
+                standing amphitheatre in the world today, despite its age.
+              </p>
+              <div class="package__join">
+                <a href="#">Join Community</a>
+              </div>
+            </li>
+          </ul>
+          <div class="links">
+            <a href="#" class="explore__link link">See More</a>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="recommendations">
+        <div class="recommendations__container">
+          <div class="recommendations__title">
+            <img src="/assets/img/travelslider.png" alt="" />
+            <div class="recommendations__title-text">
+              <span>Best </span>recommendations
+            </div>
+          </div>
+          <div class="swiper videoSwiper">
+            <div class="swiper-wrapper videoSwiper__wrapper">
+              <div class="swiper-slide videoSwiper__slide slide-videoSwiper">
+                <div class="slide-videoSwiper__wrapper">
+                  <video
+                    id="my-video"
+                    class="video-js"
+                    controls
+                    preload="auto"
+                    width="930"
+                    height="461"
+                    poster="/assets/img/forbidden-city.jpg"
+                    data-setup="{}"
+                  >
+                    <source
+                      src="/assets/videos/forbidden-city.mp4"
+                      type="video/mp4"
+                    />
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider
+                      upgrading to a web browser that
+                      <a
+                        href="https://videojs.com/html5-video-support/"
+                        target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                  </video>
+                  <div
+                    class="slide-videoSwiper__description description-recommendations"
+                  >
+                    <h3 class="description-recommendations__title">
+                      Forbidden City
+                    </h3>
+                    <p class="description-recommendations__location">Beijing</p>
+                    <p class="description-recommendations__text">
+                      The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng)
+                      is a palace complex in Dongcheng District, Beijing, China,
+                      at the center of the Imperial City of Beijing. It is
+                      surrounded by numerous opulent imperial gardens and
+                      temples including the 22 ha (54-acre) Zhongshan Park, the
+                      sacrificial Imperial Ancestral Temple, the 69 ha
+                      (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan
+                      ParkThe Forbidden City was constructed from 1406 to 1420,
+                      and was the former Chinese imperial palace and winter
+                      residence of the Emperor of China from the Ming dynasty
+                      (since the Yongle Emperor) to the end of the Qing dynasty,
+                      between 1420 and 1924.
+                    </p>
+                    <button class="description-recommendations__button">
+                      Take a Tour
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide videoSwiper__slide slide-videoSwiper">
+                <div class="slide-videoSwiper__wrapper">
+                  <video
+                    id="my-video"
+                    class="video-js"
+                    controls
+                    preload="auto"
+                    width="930"
+                    height="461"
+                    poster="/assets/img/forbidden-city.jpg"
+                    data-setup="{}"
+                  >
+                    <source
+                      src="/assets/videos/forbidden-city.mp4"
+                      type="video/mp4"
+                    />
+                    <p class="vjs-no-js">
+                      To view this video please enable JavaScript, and consider
+                      upgrading to a web browser that
+                      <a
+                        href="https://videojs.com/html5-video-support/"
+                        target="_blank"
+                        >supports HTML5 video</a
+                      >
+                    </p>
+                  </video>
+                  <div
+                    class="slide-videoSwiper__description description-recommendations"
+                  >
+                    <h3 class="description-recommendations__title">
+                      Forbidden City
+                    </h3>
+                    <p class="description-recommendations__location">Beijing</p>
+                    <p class="description-recommendations__text">
+                      The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng)
+                      is a palace complex in Dongcheng District, Beijing, China,
+                      at the center of the Imperial City of Beijing. It is
+                      surrounded by numerous opulent imperial gardens and
+                      temples including the 22 ha (54-acre) Zhongshan Park, the
+                      sacrificial Imperial Ancestral Temple, the 69 ha
+                      (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan
+                      ParkThe Forbidden City was constructed from 1406 to 1420,
+                      and was the former Chinese imperial palace and winter
+                      residence of the Emperor of China from the Ming dynasty
+                      (since the Yongle Emperor) to the end of the Qing dynasty,
+                      between 1420 and 1924.
+                    </p>
+                    <button class="description-recommendations__button">
+                      Take a Tour
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <div
+                class="swiper-button-next videoSwiper__swiper-button-next"
+              ></div>
+              <div
+                class="swiper-button-prev videoSwiper__swiper-button-prev"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="experiences">
+        <div class="experiences__container">
+          <h2 class="experiences__title title title--s34">
+            Tourist Experiences
+          </h2>
+          <div class="swiper progressionBarSwiper">
+            <div class="swiper-wrapper progressionBarSwiper__wrapper">
+              <div
+                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+              >
+                <picture class="slide-progressionBarSwiper__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/author-photo.jpg    1x,
+                      ./assets/img/desktop/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/author-photo.jpg    1x,
+                      ./assets/img/tablet/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/author-photo.jpg    1x,
+                      ./assets/img/mobile/author-photo@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="slide-progressionBarSwiper__client-photo"
+                    src="./assets/img/mobile/author-photo.jpg"
+                    alt="Client Photo"
+                  />
+                </picture>
+
+                <div class="slide-progressionBarSwiper__body">
+                  <h3 class="slide-progressionBarSwiper__name">
+                    Nikita Taranenko
+                  </h3>
+                  <p class="slide-progressionBarSwiper__location">Rome</p>
+                  <p class="slide-progressionBarSwiper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    viverra varius sem mi ut pretium, tortor nulla gravida.
+                    Turpis in nec tellus egestas. Vehicula ut facilisis velit
+                    turpis nulla nunc lobortis lobortis convallis.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. In viverra
+                    varius sem mi ut pretium, tortor nulla gravida. Turpis in
+                    nec tellus egestas. Vehicula ut facilisis velit turpis nulla
+                    nunc lobortis lobortis convallis.
+                  </p>
+                  <div class="slide-progressionBarSwiper__rating">
+                    <span class="slide-progressionBarSwiper__value">5</span>
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+              >
+                <picture class="slide-progressionBarSwiper__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/author-photo.jpg    1x,
+                      ./assets/img/desktop/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/author-photo.jpg    1x,
+                      ./assets/img/tablet/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/author-photo.jpg    1x,
+                      ./assets/img/mobile/author-photo@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="slide-progressionBarSwiper__client-photo"
+                    src="./assets/img/mobile/author-photo.jpg"
+                    alt="Client Photo"
+                  />
+                </picture>
+                <div class="slide-progressionBarSwiper__body">
+                  <h3 class="slide-progressionBarSwiper__name">
+                    Nikita Taranenko
+                  </h3>
+                  <p class="slide-progressionBarSwiper__location">Rome</p>
+                  <p class="slide-progressionBarSwiper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    viverra varius sem mi ut pretium, tortor nulla gravida.
+                    Turpis in nec tellus egestas. Vehicula ut facilisis velit
+                    turpis nulla nunc lobortis lobortis convallis.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. In viverra
+                    varius sem mi ut pretium, tortor nulla gravida. Turpis in
+                    nec tellus egestas. Vehicula ut facilisis velit turpis nulla
+                    nunc lobortis lobortis convallis.
+                  </p>
+                  <div class="slide-progressionBarSwiper__rating">
+                    <span class="slide-progressionBarSwiper__value">5</span>
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+              >
+                <picture class="slide-progressionBarSwiper__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/author-photo.jpg    1x,
+                      ./assets/img/desktop/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/author-photo.jpg    1x,
+                      ./assets/img/tablet/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/author-photo.jpg    1x,
+                      ./assets/img/mobile/author-photo@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="slide-progressionBarSwiper__client-photo"
+                    src="./assets/img/mobile/author-photo.jpg"
+                    alt="Client Photo"
+                  />
+                </picture>
+                <div class="slide-progressionBarSwiper__body">
+                  <h3 class="slide-progressionBarSwiper__name">
+                    Nikita Taranenko
+                  </h3>
+                  <p class="slide-progressionBarSwiper__location">Rome</p>
+                  <p class="slide-progressionBarSwiper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    viverra varius sem mi ut pretium, tortor nulla gravida.
+                    Turpis in nec tellus egestas. Vehicula ut facilisis velit
+                    turpis nulla nunc lobortis lobortis convallis.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. In viverra
+                    varius sem mi ut pretium, tortor nulla gravida. Turpis in
+                    nec tellus egestas. Vehicula ut facilisis velit turpis nulla
+                    nunc lobortis lobortis convallis.
+                  </p>
+                  <div class="slide-progressionBarSwiper__rating">
+                    <span class="slide-progressionBarSwiper__value">5</span>
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+              >
+                <picture class="slide-progressionBarSwiper__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/author-photo.jpg    1x,
+                      ./assets/img/desktop/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/author-photo.jpg    1x,
+                      ./assets/img/tablet/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/author-photo.jpg    1x,
+                      ./assets/img/mobile/author-photo@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="slide-progressionBarSwiper__client-photo"
+                    src="./assets/img/mobile/author-photo.jpg"
+                    alt="Client Photo"
+                  />
+                </picture>
+                <div class="slide-progressionBarSwiper__body">
+                  <h3 class="slide-progressionBarSwiper__name">
+                    Nikita Taranenko
+                  </h3>
+                  <p class="slide-progressionBarSwiper__location">Rome</p>
+                  <p class="slide-progressionBarSwiper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    viverra varius sem mi ut pretium, tortor nulla gravida.
+                    Turpis in nec tellus egestas. Vehicula ut facilisis velit
+                    turpis nulla nunc lobortis lobortis convallis.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. In viverra
+                    varius sem mi ut pretium, tortor nulla gravida. Turpis in
+                    nec tellus egestas. Vehicula ut facilisis velit turpis nulla
+                    nunc lobortis lobortis convallis.
+                  </p>
+                  <div class="slide-progressionBarSwiper__rating">
+                    <span class="slide-progressionBarSwiper__value">5</span>
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+              >
+                <picture class="slide-progressionBarSwiper__picture">
+                  <source
+                    srcset="
+                      ./assets/img/desktop/author-photo.jpg    1x,
+                      ./assets/img/desktop/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/tablet/author-photo.jpg    1x,
+                      ./assets/img/tablet/author-photo@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./assets/img/mobile/author-photo.jpg    1x,
+                      ./assets/img/mobile/author-photo@2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    class="slide-progressionBarSwiper__client-photo"
+                    src="./assets/img/mobile/author-photo.jpg"
+                    alt="Client Photo"
+                  />
+                </picture>
+                <div class="slide-progressionBarSwiper__body">
+                  <h3 class="slide-progressionBarSwiper__name">
+                    Nikita Taranenko
+                  </h3>
+                  <p class="slide-progressionBarSwiper__location">Rome</p>
+                  <p class="slide-progressionBarSwiper__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    viverra varius sem mi ut pretium, tortor nulla gravida.
+                    Turpis in nec tellus egestas. Vehicula ut facilisis velit
+                    turpis nulla nunc lobortis lobortis convallis.Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. In viverra
+                    varius sem mi ut pretium, tortor nulla gravida. Turpis in
+                    nec tellus egestas. Vehicula ut facilisis velit turpis nulla
+                    nunc lobortis lobortis convallis.
+                  </p>
+                  <div class="slide-progressionBarSwiper__rating">
+                    <span class="slide-progressionBarSwiper__value">5</span>
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                    <img src="./assets/img/rating-star.svg" alt="Rating Star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next progressionBarSwiper__swiper-button-next"
+            ></div>
+            <div
+              class="swiper-button-prev progressionBarSwiper__swiper-button-prev"
+            ></div>
+            <div
+              class="progressionBarSwiper__swiper-pagination swiper-pagination"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="get-in-touch">
+        <div class="get-in-touch__container">
+          <h2 class="get-in-touch__title title title--s26">
+            Get In Touch With Us
+          </h2>
+
+          <div class="get-in-touch__content">
+            <form class="get-in-touch__form form-get-in-touch">
+              <h3 class="form-get-in-touch__title">Send us a message</h3>
+              <div class="form-get-in-touch__text-inputs">
+                <input
+                  type="text"
+                  class="form-get-in-touch__input"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="form-get-in-touch__input"
+                  placeholder="Last Name"
+                />
+              </div>
+              <input
+                type="email"
+                class="form-get-in-touch__input"
+                placeholder="Your Gmail"
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="form-get-in-touch__comment"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="form-get-in-touch__submit-btn">
+                Send
+              </button>
+            </form>
+
+            <div class="get-in-touch__contacts contacts-get-in-touch">
+              <h3 class="contacts-get-in-touch__title">Contact Info</h3>
+              <ul class="contacts-get-in-touch__list">
+                <li class="contacts-get-in-touch__item">
+                  <p class="contacts-get-in-touch__label">Phone:</p>
+                  <a href="#" class="contacts-get-in-touch__link"
+                    >+234 70633822</a
+                  >
+                </li>
+                <li class="contacts-get-in-touch__item">
+                  <p class="contacts-get-in-touch__label">Email:</p>
+                  <a href="#" class="contacts-get-in-touch__link"
+                    >Stephenolushola5@gmail.com</a
+                  >
+                </li>
+                <li class="contacts-get-in-touch__item">
+                  <p class="contacts-get-in-touch__label">Socials</p>
+                  <ul class="contacts-get-in-touch__media-list">
+                    <li class="contacts-get-in-touch__media-item">
+                      <a href="#" class="contacts-get-in-touch__media-link"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li class="contacts-get-in-touch__media-item">
+                      <a href="#" class="contacts-get-in-touch__media-link"
+                        ><i class="fa-brands fa-facebook-messenger"></i
+                      ></a>
+                    </li>
+                    <li class="contacts-get-in-touch__media-item">
+                      <a href="#" class="contacts-get-in-touch__media-link"><i class="fa-brands fa-figma"></i></a>
+                    </li>
+                    <li class="contacts-get-in-touch__media-item">
+                      <a href="#" class="contacts-get-in-touch__media-link"><i class="fa-brands fa-behance"></i></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="./index.html" class="footer__logo">
+            <img src="/assets/img/logo.png" alt="Logo" />
+          </a>
+          <form class="footer__form-subscribe form-subscribe">
+            <label for="email" class="form-subscribe__label"
+              >Subscribe to stay</label
+            >
+            <div>
+              <input
+                type="email"
+                id="email"
+                class="form-subscribe__input"
+                placeholder="Enter your email Address"
+              />
+              <button type="submit" class="form-subscribe__submit-btn">
+                Subscribe
+              </button>
+            </div>
+          </form>
+          <ul class="footer__privacy-list privacy-list">
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Privacy Policy</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Terms of Use</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Sales and Refunds</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Legal</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Site Map</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <p class="footer__copyright">© 2022 All Rights Reserved</p>
+        </div>
+      </footer>
     </main>
     <footer></footer>
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/sliders.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sliders.js"></script>
     <script>
       $(document).ready(function () {
         $("select").niceSelect();

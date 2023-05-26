@@ -1,10 +1,6 @@
-/* Swiper
- **************************************************************/
 var swiper = swiper;
 var init = false;
 
-/* Which media query
- **************************************************************/
 function swiperMode() {
   let mobile = window.matchMedia("(min-width: 0px) and (max-width: 766px)");
   let tablet = window.matchMedia(
@@ -33,7 +29,6 @@ function swiperMode() {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          
         },
         pagination: {
           el: ".swiper-pagination",
@@ -55,17 +50,44 @@ function swiperMode() {
   // }
 }
 
-/* On Load
- **************************************************************/
 window.addEventListener("load", function () {
   swiperMode();
 });
 
-/* On Resize
- **************************************************************/
 window.addEventListener("resize", function () {
   swiperMode();
 });
 
-//
-// const player = videojs('vid1', {});
+var videoSwiper = new Swiper(".videoSwiper", {
+  loop: true,
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
+  speed: 800,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".videoSwiper__swiper-button-next",
+    prevEl: ".videoSwiper__swiper-button-prev",
+  },
+});
+// const player = videojs("vid1", {});
+
+var progressBarSwiper = new Swiper(".progressionBarSwiper", {
+  loop: true,
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
+  speed: 600,
+  spaceBetween: 30,
+
+  pagination: {
+    el: ".progressionBarSwiper__swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".progressionBarSwiper__swiper-button-next",
+    prevEl: ".progressionBarSwiper__swiper-button-prev",
+  },
+});

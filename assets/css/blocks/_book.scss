@@ -2,20 +2,20 @@
   display: flex;
   height: 100%;
   background-color: #272727;
-  &__left {
-    background-image: url("/assets/img/book.png");
-    background-size: cover;
-    width: 50%;
-    display: none;
+  // &__left {
+  //   background-image: url("/assets/img/book.png");
+  //   background-size: cover;
+  //   width: 50%;
+  //   display: none;
 
-    @include desktop {
-      display: block;
-    }
-    @media screen and (max-width: 1200px) {
-      display: none;
-    }
-  }
-  &__right {
+  //   @include desktop {
+  //     display: block;
+  //   }
+  //   @media screen and (max-width: 1200px) {
+  //     display: none;
+  //   }
+  // }
+  &__content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -23,12 +23,6 @@
     justify-items: center;
     gap: 72px;
     width: 100%;
-    @include desktop {
-      width: 50%;
-    }
-    @media screen and (max-width: 1200px) {
-      width: 100%;
-    }
     &::before {
       content: "";
       position: absolute;
@@ -37,9 +31,7 @@
       filter: brightness(0.1);
       background-image: url("/assets/img/book.png");
       background-size: cover;
-      @include desktop {
-        display: none;
-      }
+      background-position: 25% 25%;
       @media screen and (max-width: 1024px) {
         display: block;
       }
@@ -253,4 +245,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
   background-color: #272727;
+}
+.date-input {
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: fieldtext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  transition: all 0.5s ease;
+  line-height: normal;
+  text-transform: none;
+  width: 100% !important;
+  @include desktop {
+    width: 200px !important;
+  }
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  background-color: field;
+  margin: 0em;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
 }
