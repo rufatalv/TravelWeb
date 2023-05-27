@@ -59,6 +59,9 @@
   @include desktop {
     max-width: 1240px !important;
   }
+  @include desktopxl {
+    max-width: 1280px !important;
+  }
 }
 
 .wrapper {

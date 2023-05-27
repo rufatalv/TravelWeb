@@ -73,7 +73,7 @@ var videoSwiper = new Swiper(".videoSwiper", {
 });
 // const player = videojs("vid1", {});
 
-var progressBarSwiper = new Swiper(".progressionBarSwiper", {
+var progressBarSwiper = new Swiper(".experiencesSwiper", {
   loop: true,
   // autoplay: {
   //   delay: 3000,
@@ -83,11 +83,11 @@ var progressBarSwiper = new Swiper(".progressionBarSwiper", {
   spaceBetween: 30,
 
   pagination: {
-    el: ".progressionBarSwiper__swiper-pagination",
+    el: ".experiencesSwiper__swiper-pagination",
     type: "progressbar",
   },
   navigation: {
-    nextEl: ".progressionBarSwiper__swiper-button-next",
-    prevEl: ".progressionBarSwiper__swiper-button-prev",
+    nextEl: ".experiencesSwiper__swiper-button-next",
+    prevEl: ".experiencesSwiper__swiper-button-prev",
   },
 });

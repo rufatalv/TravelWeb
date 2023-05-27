@@ -1,14 +1,16 @@
 .header {
-  z-index: 30;
-  background-color: #000;
-  position: fixed;
-  top: 0;
-  max-width: 100%;
   width: 100%;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.26);
   min-height: 70px;
-  display: flex;
+  @include tablet {
+    background: #000;
+  }
   align-items: center;
-
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   transition: min-height $transition, background-color $transition;
 }
 

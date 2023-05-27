@@ -50,13 +50,13 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
-        <div class="hero__left">
+      <section class="hero">
+        <!-- <div class="hero__left">
           <div class="text">
             <h1>
               <span class="discover">Discover </span>
               <span class="new"> New </span>
-              <span class="experiences">Experiences</span>
+              <span class="experiences__title">Experiences</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
@@ -70,14 +70,65 @@
         </div>
         <div class="hero__right">
           <div class="up">
-            <div>
-              <img src="assets/img/paris.png" alt="" />
+            <div class="img">
+              <picture>
+                <source
+                  srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./assets/img/mobile/eiffel-tower.png 1x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./assets/img/mobile/eiffel-tower.png"
+                  alt="Eiffel Tower"
+                />
+              </picture>
             </div>
-            <div>
-              <img src="assets/img/waterfall.png" alt="" />
+            <div class="img">
+              <picture>
+                <source
+                  srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./assets/img/mobile/eiffel-tower.png 1x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./assets/img/mobile/eiffel-tower.png"
+                  alt="Eiffel Tower"
+                />
+              </picture>
             </div>
-            <div>
-              <img src="assets/img/cliff.png" alt="" />
+            <div class="img">
+              <picture>
+                <source
+                  srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
+                  media="(min-width:1280px)"
+                />
+                <source
+                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./assets/img/mobile/eiffel-tower.png 1x"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./assets/img/mobile/eiffel-tower.png"
+                  alt="Eiffel Tower"
+                />
+              </picture>
             </div>
           </div>
           <div class="down">
@@ -94,8 +145,8 @@
               <h2>1.1+ K</h2>
             </div>
           </div>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
       <section class="partners">
         <div class="partners__container">
           <ul class="partners__list">
@@ -114,7 +165,7 @@
           </ul>
         </div>
       </section>
-      <section class="explore">
+      <section class="explore" id="explore">
         <div class="explore__container">
           <h2 class="explore__title title"><span>Explore</span> The World</h2>
           <p class="explore__text">
@@ -142,28 +193,28 @@
                 <picture class="list-explore__picture">
                   <source
                     srcset="
-                      ./assets/img/desktop/agbokim.jpg    1x,
-                      ./assets/img/desktop/agbokim@2x.jpg 2x
+                      ./assets/img/desktop/agbokim-explore.jpg    1x,
+                      ./assets/img/desktop/agbokim-explore@2x.jpg 2x
                     "
                     media="(min-width:1280px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/tablet/agbokim.jpg    1x,
-                      ./assets/img/tablet/agbokim@2x.jpg 2x
+                      ./assets/img/tablet/agbokim-explore.jpg    1x,
+                      ./assets/img/tablet/agbokim-explore@2x.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/mobile/agbokim.jpg    1x,
-                      ./assets/img/mobile/agbokim@2x.jpg 2x
+                      ./assets/img/mobile/agbokim-explore.jpg    1x,
+                      ./assets/img/mobile/agbokim-explore@2x.jpg 2x
                     "
                     media="(max-width:767px)"
                   />
                   <img
                     class="list-explore__img"
-                    src="./assets/img/mobile/agbokim.jpg"
+                    src="./assets/img/mobile/agbokim-explore.jpg"
                     alt="Agbokim Waterfall"
                   />
                 </picture>
@@ -189,28 +240,28 @@
                 <picture class="list-explore__picture">
                   <source
                     srcset="
-                      ./assets/img/desktop/taj-mahal.jpg    1x,
-                      ./assets/img/desktop/taj-mahal@2x.jpg 2x
+                      ./assets/img/desktop/taj-mahal-explore.jpg    1x,
+                      ./assets/img/desktop/taj-mahal-explore@2x.jpg 2x
                     "
                     media="(min-width:1280px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/tablet/taj-mahal.jpg    1x,
-                      ./assets/img/tablet/taj-mahal@2x.jpg 2x
+                      ./assets/img/tablet/taj-mahal-explore.jpg    1x,
+                      ./assets/img/tablet/taj-mahal-explore@2x.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/mobile/taj-mahal.jpg    1x,
-                      ./assets/img/mobile/taj-mahal@2x.jpg 2x
+                      ./assets/img/mobile/taj-mahal-explore.jpg    1x,
+                      ./assets/img/mobile/taj-mahal-explore@2x.jpg 2x
                     "
                     media="(max-width:767px)"
                   />
                   <img
                     class="list-explore__img"
-                    src="./assets/img/mobile/taj-mahal.jpg"
+                    src="./assets/img/mobile/taj-mahal-explore.jpg"
                     alt="Taj Mahal"
                   />
                 </picture>
@@ -234,28 +285,28 @@
                 <picture class="list-explore__picture">
                   <source
                     srcset="
-                      ./assets/img/desktop/eiffel-tower.jpg    1x,
-                      ./assets/img/desktop/eiffel-tower@2x.jpg 2x
+                      ./assets/img/desktop/eiffel-tower-explore.jpg    1x,
+                      ./assets/img/desktop/eiffel-tower-explore@2x.jpg 2x
                     "
                     media="(min-width:1280px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/tablet/eiffel-tower.jpg    1x,
-                      ./assets/img/tablet/eiffel-tower@2x.jpg 2x
+                      ./assets/img/tablet/eiffel-tower-explore.jpg    1x,
+                      ./assets/img/tablet/eiffel-tower-explore@2x.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/mobile/eiffel-tower.jpg    1x,
-                      ./assets/img/mobile/eiffel-tower@2x.jpg 2x
+                      ./assets/img/mobile/eiffel-tower-explore.jpg    1x,
+                      ./assets/img/mobile/eiffel-tower-explore@2x.jpg 2x
                     "
                     media="(max-width:767px)"
                   />
                   <img
                     class="list-explore__img"
-                    src="./assets/img/mobile/eiffel-tower.jpg"
+                    src="./assets/img/mobile/eiffel-tower-explore.jpg"
                     alt="Eiffel Tower"
                   />
                 </picture>
@@ -279,28 +330,28 @@
                 <picture class="list-explore__picture">
                   <source
                     srcset="
-                      ./assets/img/desktop/great-wall.jpg    1x,
-                      ./assets/img/desktop/great-wall@2x.jpg 2x
+                      ./assets/img/desktop/great-wall-explore.jpg    1x,
+                      ./assets/img/desktop/great-wall-explore@2x.jpg 2x
                     "
                     media="(min-width:1280px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/tablet/great-wall.jpg    1x,
-                      ./assets/img/tablet/great-wall@2x.jpg 2x
+                      ./assets/img/tablet/great-wall-explore.jpg    1x,
+                      ./assets/img/tablet/great-wall-explore@2x.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
                     srcset="
-                      ./assets/img/mobile/great-wall.jpg    1x,
-                      ./assets/img/mobile/great-wall@2x.jpg 2x
+                      ./assets/img/mobile/great-wall-explore.jpg    1x,
+                      ./assets/img/mobile/great-wall-explore@2x.jpg 2x
                     "
                     media="(max-width:767px)"
                   />
                   <img
                     class="list-explore__img"
-                    src="./assets/img/mobile/great-wall.jpg"
+                    src="./assets/img/mobile/great-wall-explore.jpg"
                     alt="Great Wall China"
                   />
                 </picture>
@@ -776,16 +827,16 @@
         </div>
       </section> -->
       <section class="experiences">
-        <div class="experiences__container">
+        <div class="experiences__cont">
           <h2 class="experiences__title title title--s34">
             Tourist Experiences
           </h2>
-          <div class="swiper progressionBarSwiper">
-            <div class="swiper-wrapper progressionBarSwiper__wrapper">
+          <div class="swiper experiencesSwiper">
+            <div class="swiper-wrapper experiencesSwiper__wrapper">
               <div
-                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+                class="swiper-slide experiencesSwiper__slide slide-experiencesSwiper"
               >
-                <picture class="slide-progressionBarSwiper__picture">
+                <picture class="slide-experiencesSwiper__picture">
                   <source
                     srcset="
                       ./assets/img/desktop/author-photo.jpg    1x,
@@ -808,18 +859,18 @@
                     media="(max-width:767px)"
                   />
                   <img
-                    class="slide-progressionBarSwiper__client-photo"
+                    class="slide-experiencesSwiper__client-photo"
                     src="./assets/img/mobile/author-photo.jpg"
                     alt="Client Photo"
                   />
                 </picture>
 
-                <div class="slide-progressionBarSwiper__body">
-                  <h3 class="slide-progressionBarSwiper__name">
+                <div class="slide-experiencesSwiper__body">
+                  <h3 class="slide-experiencesSwiper__name">
                     Nikita Taranenko
                   </h3>
-                  <p class="slide-progressionBarSwiper__location">Rome</p>
-                  <p class="slide-progressionBarSwiper__text">
+                  <p class="slide-experiencesSwiper__location">Rome</p>
+                  <p class="slide-experiencesSwiper__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     viverra varius sem mi ut pretium, tortor nulla gravida.
                     Turpis in nec tellus egestas. Vehicula ut facilisis velit
@@ -829,8 +880,8 @@
                     nec tellus egestas. Vehicula ut facilisis velit turpis nulla
                     nunc lobortis lobortis convallis.
                   </p>
-                  <div class="slide-progressionBarSwiper__rating">
-                    <span class="slide-progressionBarSwiper__value">5</span>
+                  <div class="slide-experiencesSwiper__rating">
+                    <span class="slide-experiencesSwiper__value">5</span>
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
@@ -840,9 +891,9 @@
                 </div>
               </div>
               <div
-                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+                class="swiper-slide experiencesSwiper__slide slide-experiencesSwiper"
               >
-                <picture class="slide-progressionBarSwiper__picture">
+                <picture class="slide-experiencesSwiper__picture">
                   <source
                     srcset="
                       ./assets/img/desktop/author-photo.jpg    1x,
@@ -865,17 +916,17 @@
                     media="(max-width:767px)"
                   />
                   <img
-                    class="slide-progressionBarSwiper__client-photo"
+                    class="slide-experiencesSwiper__client-photo"
                     src="./assets/img/mobile/author-photo.jpg"
                     alt="Client Photo"
                   />
                 </picture>
-                <div class="slide-progressionBarSwiper__body">
-                  <h3 class="slide-progressionBarSwiper__name">
+                <div class="slide-experiencesSwiper__body">
+                  <h3 class="slide-experiencesSwiper__name">
                     Nikita Taranenko
                   </h3>
-                  <p class="slide-progressionBarSwiper__location">Rome</p>
-                  <p class="slide-progressionBarSwiper__text">
+                  <p class="slide-experiencesSwiper__location">Rome</p>
+                  <p class="slide-experiencesSwiper__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     viverra varius sem mi ut pretium, tortor nulla gravida.
                     Turpis in nec tellus egestas. Vehicula ut facilisis velit
@@ -885,8 +936,8 @@
                     nec tellus egestas. Vehicula ut facilisis velit turpis nulla
                     nunc lobortis lobortis convallis.
                   </p>
-                  <div class="slide-progressionBarSwiper__rating">
-                    <span class="slide-progressionBarSwiper__value">5</span>
+                  <div class="slide-experiencesSwiper__rating">
+                    <span class="slide-experiencesSwiper__value">5</span>
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
@@ -896,9 +947,9 @@
                 </div>
               </div>
               <div
-                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+                class="swiper-slide experiencesSwiper__slide slide-experiencesSwiper"
               >
-                <picture class="slide-progressionBarSwiper__picture">
+                <picture class="slide-experiencesSwiper__picture">
                   <source
                     srcset="
                       ./assets/img/desktop/author-photo.jpg    1x,
@@ -921,17 +972,17 @@
                     media="(max-width:767px)"
                   />
                   <img
-                    class="slide-progressionBarSwiper__client-photo"
+                    class="slide-experiencesSwiper__client-photo"
                     src="./assets/img/mobile/author-photo.jpg"
                     alt="Client Photo"
                   />
                 </picture>
-                <div class="slide-progressionBarSwiper__body">
-                  <h3 class="slide-progressionBarSwiper__name">
+                <div class="slide-experiencesSwiper__body">
+                  <h3 class="slide-experiencesSwiper__name">
                     Nikita Taranenko
                   </h3>
-                  <p class="slide-progressionBarSwiper__location">Rome</p>
-                  <p class="slide-progressionBarSwiper__text">
+                  <p class="slide-experiencesSwiper__location">Rome</p>
+                  <p class="slide-experiencesSwiper__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     viverra varius sem mi ut pretium, tortor nulla gravida.
                     Turpis in nec tellus egestas. Vehicula ut facilisis velit
@@ -941,8 +992,8 @@
                     nec tellus egestas. Vehicula ut facilisis velit turpis nulla
                     nunc lobortis lobortis convallis.
                   </p>
-                  <div class="slide-progressionBarSwiper__rating">
-                    <span class="slide-progressionBarSwiper__value">5</span>
+                  <div class="slide-experiencesSwiper__rating">
+                    <span class="slide-experiencesSwiper__value">5</span>
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
@@ -952,9 +1003,9 @@
                 </div>
               </div>
               <div
-                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+                class="swiper-slide experiencesSwiper__slide slide-experiencesSwiper"
               >
-                <picture class="slide-progressionBarSwiper__picture">
+                <picture class="slide-experiencesSwiper__picture">
                   <source
                     srcset="
                       ./assets/img/desktop/author-photo.jpg    1x,
@@ -977,17 +1028,17 @@
                     media="(max-width:767px)"
                   />
                   <img
-                    class="slide-progressionBarSwiper__client-photo"
+                    class="slide-experiencesSwiper__client-photo"
                     src="./assets/img/mobile/author-photo.jpg"
                     alt="Client Photo"
                   />
                 </picture>
-                <div class="slide-progressionBarSwiper__body">
-                  <h3 class="slide-progressionBarSwiper__name">
+                <div class="slide-experiencesSwiper__body">
+                  <h3 class="slide-experiencesSwiper__name">
                     Nikita Taranenko
                   </h3>
-                  <p class="slide-progressionBarSwiper__location">Rome</p>
-                  <p class="slide-progressionBarSwiper__text">
+                  <p class="slide-experiencesSwiper__location">Rome</p>
+                  <p class="slide-experiencesSwiper__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     viverra varius sem mi ut pretium, tortor nulla gravida.
                     Turpis in nec tellus egestas. Vehicula ut facilisis velit
@@ -997,8 +1048,8 @@
                     nec tellus egestas. Vehicula ut facilisis velit turpis nulla
                     nunc lobortis lobortis convallis.
                   </p>
-                  <div class="slide-progressionBarSwiper__rating">
-                    <span class="slide-progressionBarSwiper__value">5</span>
+                  <div class="slide-experiencesSwiper__rating">
+                    <span class="slide-experiencesSwiper__value">5</span>
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
@@ -1008,9 +1059,9 @@
                 </div>
               </div>
               <div
-                class="swiper-slide progressionBarSwiper__slide slide-progressionBarSwiper"
+                class="swiper-slide experiencesSwiper__slide slide-experiencesSwiper"
               >
-                <picture class="slide-progressionBarSwiper__picture">
+                <picture class="slide-experiencesSwiper__picture">
                   <source
                     srcset="
                       ./assets/img/desktop/author-photo.jpg    1x,
@@ -1033,17 +1084,17 @@
                     media="(max-width:767px)"
                   />
                   <img
-                    class="slide-progressionBarSwiper__client-photo"
+                    class="slide-experiencesSwiper__client-photo"
                     src="./assets/img/mobile/author-photo.jpg"
                     alt="Client Photo"
                   />
                 </picture>
-                <div class="slide-progressionBarSwiper__body">
-                  <h3 class="slide-progressionBarSwiper__name">
+                <div class="slide-experiencesSwiper__body">
+                  <h3 class="slide-experiencesSwiper__name">
                     Nikita Taranenko
                   </h3>
-                  <p class="slide-progressionBarSwiper__location">Rome</p>
-                  <p class="slide-progressionBarSwiper__text">
+                  <p class="slide-experiencesSwiper__location">Rome</p>
+                  <p class="slide-experiencesSwiper__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     viverra varius sem mi ut pretium, tortor nulla gravida.
                     Turpis in nec tellus egestas. Vehicula ut facilisis velit
@@ -1053,8 +1104,8 @@
                     nec tellus egestas. Vehicula ut facilisis velit turpis nulla
                     nunc lobortis lobortis convallis.
                   </p>
-                  <div class="slide-progressionBarSwiper__rating">
-                    <span class="slide-progressionBarSwiper__value">5</span>
+                  <div class="slide-experiencesSwiper__rating">
+                    <span class="slide-experiencesSwiper__value">5</span>
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
                     <img src="./assets/img/rating-star.svg" alt="Rating Star" />
@@ -1065,13 +1116,13 @@
               </div>
             </div>
             <div
-              class="swiper-button-next progressionBarSwiper__swiper-button-next"
+              class="swiper-button-next experiencesSwiper__swiper-button-next"
             ></div>
             <div
-              class="swiper-button-prev progressionBarSwiper__swiper-button-prev"
+              class="swiper-button-prev experiencesSwiper__swiper-button-prev"
             ></div>
             <div
-              class="progressionBarSwiper__swiper-pagination swiper-pagination"
+              class="experiencesSwiper__swiper-pagination swiper-pagination"
             ></div>
           </div>
         </div>

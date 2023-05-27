@@ -6,7 +6,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  &__cont {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 380px !important;
+    width: 100%;
+    @include tablet {
+      max-width: 768px !important;
+    }
+    @include desktopxl {
+      max-width: 1280px !important;
+    }
+  }
   @include retina {
     background-image: url("/assets/img/mobile/experiences-bg@2x.jpg");
   }
@@ -19,7 +31,7 @@
     }
   }
 
-  @include desktop {
+  @include desktopxl {
     background-image: url("/assets/img/desktop/experiences-bg.jpg");
 
     @include retina {
@@ -30,12 +42,14 @@
   &__title {
     margin-bottom: 51px;
     text-align: center;
+    font-size: 34px;
+    font-weight: 500;
   }
 }
 
 // ---------------------------------------------------
 
-.progressionBarSwiper {
+.experiencesSwiper {
   &__swiper-pagination {
     height: 5px !important;
     background-color: $primaryColor;
@@ -52,7 +66,7 @@
       width: 520px !important;
     }
 
-    @include desktop {
+    @include desktopxl {
       width: 790px !important;
       top: 340px !important;
       left: 461px !important;
@@ -98,7 +112,7 @@
       transform: translateY(-32px);
     }
 
-    @include desktop {
+    @include desktopxl {
       transform: translateY(-45px);
     }
   }
@@ -111,7 +125,7 @@
       transform: translate(-130px, -32px);
     }
 
-    @include desktop {
+    @include desktopxl {
       transform: translate(-120px, -45px);
     }
   }
@@ -119,7 +133,7 @@
 
 // -------------------------------------------------
 
-.slide-progressionBarSwiper {
+.slide-experiencesSwiper {
   display: flex;
   flex-direction: column;
 
@@ -137,7 +151,7 @@
   }
   &__body {
     max-width: 520px;
-    @include desktop {
+    @include desktopxl {
       max-width: 788px;
     }
   }
@@ -162,7 +176,7 @@
       margin-bottom: 19px;
     }
 
-    @include desktop {
+    @include desktopxl {
       margin-bottom: 53px;
     }
     &::before {
@@ -183,7 +197,7 @@
       font-size: 13px;
     }
 
-    @include desktop {
+    @include desktopxl {
       font-size: 18px;
       margin-bottom: 37px;
     }
