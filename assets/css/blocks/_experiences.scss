@@ -1,29 +1,29 @@
 .experiences {
   padding-top: 58px;
   padding-bottom: 52px;
-
-  background-image: url('/assets/img/mobile/experiences-bg.jpg');
+  color: $primaryColor;
+  background-image: url("/assets/img/mobile/experiences-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @include retina {
-    background-image: url('/assets/img/mobile/experiences-bg@2x.jpg');
+    background-image: url("/assets/img/mobile/experiences-bg@2x.jpg");
   }
 
   @include tablet {
-    background-image: url('/assets/img/tablet/experiences-bg.jpg');
+    background-image: url("/assets/img/tablet/experiences-bg.jpg");
 
     @include retina {
-      background-image: url('/assets/img/tablet/experiences-bg@2x.jpg');
+      background-image: url("/assets/img/tablet/experiences-bg@2x.jpg");
     }
   }
 
   @include desktop {
-    background-image: url('/assets/img/desktop/experiences-bg.jpg');
+    background-image: url("/assets/img/desktop/experiences-bg.jpg");
 
     @include retina {
-      background-image: url('/assets/img/desktop/experiences-bg@2x.jpg');
+      background-image: url("/assets/img/desktop/experiences-bg@2x.jpg");
     }
   }
 
@@ -166,11 +166,11 @@
       margin-bottom: 53px;
     }
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 24px;
       height: 24px;
-      background-image: url('/assets/img/location-tick.svg');
+      background-image: url("/assets/img/location-tick.svg");
     }
   }
   &__text {
