@@ -115,6 +115,10 @@
     input {
       color: #8a8a8a;
       height: 50px;
+      width: 240px;
+      @include tablet {
+        width: 340px;
+      }
       -webkit-appearance: none;
       -ms-appearance: none;
       appearance: none;

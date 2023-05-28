@@ -40,8 +40,10 @@
               <ul class="navigation__links">
                 <li class="navigation__link active"><a href="#">Home</a></li>
                 <li class="navigation__link"><a href="#explore">Explore</a></li>
-                <li class="navigation__link"><a href="#">About Us</a></li>
-                <li class="navigation__link"><a href="#">Contact</a></li>
+                <li class="navigation__link">
+                  <a href="#aboutus">About Us</a>
+                </li>
+                <li class="navigation__link"><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -51,12 +53,12 @@
     </header>
     <main>
       <section class="hero">
-        <!-- <div class="hero__left">
+        <div class="hero__col hero__left">
           <div class="text">
             <h1>
               <span class="discover">Discover </span>
               <span class="new"> New </span>
-              <span class="experiences__title">Experiences</span>
+              <span class="experience__title">Experiences</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet
@@ -68,16 +70,12 @@
             </div>
           </div>
         </div>
-        <div class="hero__right">
+        <div class="hero__col hero__right">
           <div class="up">
             <div class="img">
               <picture>
                 <source
                   srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
-                  media="(min-width:1280px)"
-                />
-                <source
-                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
                   media="(min-width:768px)"
                 />
                 <source
@@ -93,19 +91,15 @@
             <div class="img">
               <picture>
                 <source
-                  srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
-                  media="(min-width:1280px)"
-                />
-                <source
-                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
+                  srcset="./assets/img/desktop/Waterfall.jpg 1x"
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./assets/img/mobile/eiffel-tower.png 1x"
+                  srcset="./assets/img/mobile/Waterfall.png 1x"
                   media="(max-width:767px)"
                 />
                 <img
-                  src="./assets/img/mobile/eiffel-tower.png"
+                  src="./assets/img/mobile/Waterfall.png"
                   alt="Eiffel Tower"
                 />
               </picture>
@@ -113,21 +107,14 @@
             <div class="img">
               <picture>
                 <source
-                  srcset="./assets/img/desktop/eiffel-tower.jpg 1x"
-                  media="(min-width:1280px)"
-                />
-                <source
-                  srcset="./assets/img/tablet/eiffel-tower.jpg 1x"
+                  srcset="./assets/img/desktop/rocks.jpg 1x"
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./assets/img/mobile/eiffel-tower.png 1x"
+                  srcset="./assets/img/mobile/rocks.jpg 1x"
                   media="(max-width:767px)"
                 />
-                <img
-                  src="./assets/img/mobile/eiffel-tower.png"
-                  alt="Eiffel Tower"
-                />
+                <img src="./assets/img/mobile/rocks.jpg" alt="Eiffel Tower" />
               </picture>
             </div>
           </div>
@@ -145,7 +132,7 @@
               <h2>1.1+ K</h2>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
       <section class="partners">
         <div class="partners__container">
@@ -449,25 +436,28 @@
               Book a <span>Flight</span> With Us Today
             </div>
             <form action="#" class="book__form">
-              <div class="checkboxes">
-                <div class="check">
-                  <label for="radio">One Way</label>
-                  <input
-                    class="checkbox"
-                    type="radio"
-                    name="One Way"
-                    id="radio"
-                  />
-                </div>
-                <div class="check">
-                  <label for="radio">One Way</label>
-                  <input
-                    class="checkbox"
-                    type="radio"
-                    name="One Way"
-                    id="radio"
-                  />
-                </div>
+              <div class="book__form--checkboxes">
+                <input
+                  type="radio"
+                  name="chooseTrip"
+                  id="OneWay"
+                  class="book__form--checkbox"
+                  value="One Way"
+                />
+                <label for="OneWay" class="book__form--label-checkbox"
+                  >One Way</label
+                >
+
+                <input
+                  type="radio"
+                  name="chooseTrip"
+                  id="RoundTrip"
+                  class="book__form--checkbox"
+                  value="Round Trip"
+                />
+                <label for="RoundTrip" class="book__form--label-checkbox"
+                  >Round Trip</label
+                >
               </div>
               <div class="text-inputs">
                 <img
@@ -698,135 +688,12 @@
           </div>
         </div>
       </section>
-      <!-- <section class="recommendations">
+      <section class="recommendations">
         <div class="recommendations__container">
-          <div class="recommendations__title">
-            <img src="/assets/img/travelslider.png" alt="" />
-            <div class="recommendations__title-text">
-              <span>Best </span>recommendations
-            </div>
-          </div>
-          <div class="swiper videoSwiper">
-            <div class="swiper-wrapper videoSwiper__wrapper">
-              <div class="swiper-slide videoSwiper__slide slide-videoSwiper">
-                <div class="slide-videoSwiper__wrapper">
-                  <video
-                    id="my-video"
-                    class="video-js"
-                    controls
-                    preload="auto"
-                    width="930"
-                    height="461"
-                    poster="/assets/img/forbidden-city.jpg"
-                    data-setup="{}"
-                  >
-                    <source
-                      src="/assets/videos/forbidden-city.mp4"
-                      type="video/mp4"
-                    />
-                    <p class="vjs-no-js">
-                      To view this video please enable JavaScript, and consider
-                      upgrading to a web browser that
-                      <a
-                        href="https://videojs.com/html5-video-support/"
-                        target="_blank"
-                        >supports HTML5 video</a
-                      >
-                    </p>
-                  </video>
-                  <div
-                    class="slide-videoSwiper__description description-recommendations"
-                  >
-                    <h3 class="description-recommendations__title">
-                      Forbidden City
-                    </h3>
-                    <p class="description-recommendations__location">Beijing</p>
-                    <p class="description-recommendations__text">
-                      The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng)
-                      is a palace complex in Dongcheng District, Beijing, China,
-                      at the center of the Imperial City of Beijing. It is
-                      surrounded by numerous opulent imperial gardens and
-                      temples including the 22 ha (54-acre) Zhongshan Park, the
-                      sacrificial Imperial Ancestral Temple, the 69 ha
-                      (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan
-                      ParkThe Forbidden City was constructed from 1406 to 1420,
-                      and was the former Chinese imperial palace and winter
-                      residence of the Emperor of China from the Ming dynasty
-                      (since the Yongle Emperor) to the end of the Qing dynasty,
-                      between 1420 and 1924.
-                    </p>
-                    <button class="description-recommendations__button">
-                      Take a Tour
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide videoSwiper__slide slide-videoSwiper">
-                <div class="slide-videoSwiper__wrapper">
-                  <video
-                    id="my-video"
-                    class="video-js"
-                    controls
-                    preload="auto"
-                    width="930"
-                    height="461"
-                    poster="/assets/img/forbidden-city.jpg"
-                    data-setup="{}"
-                  >
-                    <source
-                      src="/assets/videos/forbidden-city.mp4"
-                      type="video/mp4"
-                    />
-                    <p class="vjs-no-js">
-                      To view this video please enable JavaScript, and consider
-                      upgrading to a web browser that
-                      <a
-                        href="https://videojs.com/html5-video-support/"
-                        target="_blank"
-                        >supports HTML5 video</a
-                      >
-                    </p>
-                  </video>
-                  <div
-                    class="slide-videoSwiper__description description-recommendations"
-                  >
-                    <h3 class="description-recommendations__title">
-                      Forbidden City
-                    </h3>
-                    <p class="description-recommendations__location">Beijing</p>
-                    <p class="description-recommendations__text">
-                      The Forbidden City (Chinese: 紫禁城; pinyin: Zǐjìnchéng)
-                      is a palace complex in Dongcheng District, Beijing, China,
-                      at the center of the Imperial City of Beijing. It is
-                      surrounded by numerous opulent imperial gardens and
-                      temples including the 22 ha (54-acre) Zhongshan Park, the
-                      sacrificial Imperial Ancestral Temple, the 69 ha
-                      (171-acre) Beihai Park, and the 23 ha (57-acre) Jingshan
-                      ParkThe Forbidden City was constructed from 1406 to 1420,
-                      and was the former Chinese imperial palace and winter
-                      residence of the Emperor of China from the Ming dynasty
-                      (since the Yongle Emperor) to the end of the Qing dynasty,
-                      between 1420 and 1924.
-                    </p>
-                    <button class="description-recommendations__button">
-                      Take a Tour
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="buttons">
-              <div
-                class="swiper-button-next videoSwiper__swiper-button-next"
-              ></div>
-              <div
-                class="swiper-button-prev videoSwiper__swiper-button-prev"
-              ></div>
-            </div>
-          </div>
+
         </div>
-      </section> -->
-      <section class="experiences">
+      </section>
+      <section class="experiences" id="aboutus">
         <div class="experiences__cont">
           <h2 class="experiences__title title title--s34">
             Tourist Experiences
@@ -867,7 +734,7 @@
 
                 <div class="slide-experiencesSwiper__body">
                   <h3 class="slide-experiencesSwiper__name">
-                    Nikita Taranenko
+                    Alemayehu Mitzi
                   </h3>
                   <p class="slide-experiencesSwiper__location">Rome</p>
                   <p class="slide-experiencesSwiper__text">
@@ -923,7 +790,7 @@
                 </picture>
                 <div class="slide-experiencesSwiper__body">
                   <h3 class="slide-experiencesSwiper__name">
-                    Nikita Taranenko
+                    Alemayehu Mitzi
                   </h3>
                   <p class="slide-experiencesSwiper__location">Rome</p>
                   <p class="slide-experiencesSwiper__text">
@@ -979,7 +846,7 @@
                 </picture>
                 <div class="slide-experiencesSwiper__body">
                   <h3 class="slide-experiencesSwiper__name">
-                    Nikita Taranenko
+                    Alemayehu Mitzi
                   </h3>
                   <p class="slide-experiencesSwiper__location">Rome</p>
                   <p class="slide-experiencesSwiper__text">
@@ -1035,7 +902,7 @@
                 </picture>
                 <div class="slide-experiencesSwiper__body">
                   <h3 class="slide-experiencesSwiper__name">
-                    Nikita Taranenko
+                    Alemayehu Mitzi
                   </h3>
                   <p class="slide-experiencesSwiper__location">Rome</p>
                   <p class="slide-experiencesSwiper__text">
@@ -1091,7 +958,7 @@
                 </picture>
                 <div class="slide-experiencesSwiper__body">
                   <h3 class="slide-experiencesSwiper__name">
-                    Nikita Taranenko
+                    Alemayehu Mitzi
                   </h3>
                   <p class="slide-experiencesSwiper__location">Rome</p>
                   <p class="slide-experiencesSwiper__text">
@@ -1127,7 +994,7 @@
           </div>
         </div>
       </section>
-      <section class="getInTouch">
+      <section class="getInTouch" id="contact">
         <div class="getInTouch__container">
           <h2 class="getInTouch__title title title--s26">
             Get In Touch With Us

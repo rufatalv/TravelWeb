@@ -273,3 +273,97 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   border-image: initial;
 }
+
+.book__form {
+  &--checkboxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+
+    @include tablet {
+      padding-right: 26px;
+      padding-left: 26px;
+    }
+  }
+  &--dates {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include tablet {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+  &--options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include tablet {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+  &--checkbox {
+    border: 3px solid #494747;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  &--label-checkbox {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid $primaryColor;
+
+      border-radius: 50%;
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+    .book__form--checkbox:checked + &:before {
+      background-color: $accentColor;
+    }
+    // .book__form--checkbox:checked + &:after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: 6px;
+    //   left: 8px;
+    //   width: 6px;
+    //   height: 14px;
+    //   border: solid $accentColor;
+    //   border-width: 0 2px 2px 0;
+    //   transform: rotate(45deg);
+    // }
+  }
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
