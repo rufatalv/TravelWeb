@@ -46,3 +46,6 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+const player = videojs("my-video", {
+  fluid: true,
+});
