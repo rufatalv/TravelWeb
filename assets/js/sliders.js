@@ -58,27 +58,12 @@ window.addEventListener("resize", function () {
   swiperMode();
 });
 
-var videoSwiper = new Swiper(".videoSwiper", {
-  loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
-  speed: 800,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".videoSwiper__swiper-button-next",
-    prevEl: ".videoSwiper__swiper-button-prev",
-  },
-});
-// const player = videojs("vid1", {});
-
 var progressBarSwiper = new Swiper(".experiencesSwiper", {
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   speed: 600,
   spaceBetween: 30,
 
