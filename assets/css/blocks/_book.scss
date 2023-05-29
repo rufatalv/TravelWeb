@@ -108,6 +108,9 @@
             width: 100%;
             height: 45px;
             padding-left: 15%;
+            @include mobile {
+              padding-left: 10%;
+            }
             @include tablet {
               padding-left: 22%;
             }
@@ -230,6 +233,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     span {
       padding-left: 10%;
+      @include mobile {
+        padding-left: 5%;
+      } 
       @include tablet {
         padding-left: 7%;
       }

@@ -897,6 +897,11 @@
   font-size: 15px;
   border: 3px #494747 solid;
 }
+@media screen and (min-width: 480px) {
+  .book__content .inner form .date-inputs .date-input {
+    padding-left: 10%;
+  }
+}
 @media screen and (min-width: 768px) {
   .book__content .inner form .date-inputs .date-input {
     padding-left: 22%;
@@ -1038,6 +1043,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .preferences .nice-select span {
   padding-left: 10%;
+}
+@media screen and (min-width: 480px) {
+  .preferences .nice-select span {
+    padding-left: 5%;
+  }
 }
 @media screen and (min-width: 768px) {
   .preferences .nice-select span {
